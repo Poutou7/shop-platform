@@ -1,0 +1,52 @@
+.setting-account {
+  position: relative;
+}
+
+.setting-account button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.setting-account button.log-out {
+  background-color: var(--second-alt-color);
+}
+
+.setting-account button.change-password {
+  background-color: var(--base-color);
+  top: 65px;
+}
+
+.setting-account .person {
+  border: 3px solid #fff;
+}
+
+.setting-account .person img {
+  border: none;
+}
+
+.setting-account form {
+  background-color: #fff;
+  padding: 70px 60px;
+  border-radius: 12px;
+  width: 600px;
+}
+
+@media (max-width: 767px) {
+  .setting-account form {
+    width: 100%;
+    padding: 35px 20px;
+  }
+}
+
+.setting-account form input {
+  background-color: #f7f7f7;
+}

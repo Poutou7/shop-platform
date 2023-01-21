@@ -1,0 +1,114 @@
+.about .main {
+  background-color: #fff;
+}
+
+.info-numbers {
+  background-color: var(--base-alt-color);
+}
+
+.info-numbers img {
+  max-width: 100%;
+}
+
+.info-numbers > div {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.info-numbers h2 {
+  font-size: 33px;
+  color: #006881;
+  margin-bottom: 30px;
+}
+
+.info-numbers .infos {
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-numbers .info span {
+  color: var(--base-color)
+}
+
+.info-numbers .info .number {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.info-numbers .info .data {
+  font-size: 15px;
+}
+
+.info-numbers p {
+  width: 50%;
+  text-align: right;
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .info-numbers .infos {
+    flex-direction: column-reverse;
+  }
+
+  .info-numbers p {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+
+.about .we-are > div {
+  gap: 60px;
+}
+
+.about .we-are h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 23px;
+  font-weight: 800;
+}
+
+.about .we-are p {
+  font-size: 17px;
+  line-height: 2;
+}
+
+.about .we-are img {
+  width: 50%;
+
+}
+
+
+@media (max-width: 767px) {
+  .about .we-are > div div {
+    text-align: center;
+  }
+
+  .about .we-are p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .about .we-are > div:first-of-type {
+    flex-direction: column;
+  }
+
+  .about .we-are > div:last-of-type {
+    flex-direction: column-reverse;
+  }
+
+  .about .we-are img {
+    width: 100%;
+  }
+}
+
+.content {
+  margin: 100px auto
+}
+
+.footer {
+  margin-bottom: 40px;
+}

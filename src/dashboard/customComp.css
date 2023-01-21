@@ -1,0 +1,314 @@
+.custom-comp h1 {
+  margin: 0;
+}
+
+.custom-comp > p {
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+.custom-comp .search-add-product .search {
+  display: flex;
+  border: 1px solid rgb(0 161 198 / 20%);
+  border-radius: 8px;
+}
+
+.custom-comp .search input {
+  border-radius: 0 8px 8px 0;
+  padding: 15px;
+  color: var(--dashboard-color);
+  width: 320px;
+}
+
+.custom-comp .search input::placeholder {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.custom-comp .search button {
+  border-radius: 8px;
+  border: none;
+  padding: 0 40px;
+  background-color: rgb(0 161 198);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.custom-comp .search-add-product a,
+.custom-comp .search-add-product > button {
+  position: relative;
+  background-color: var(--second-color);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 19px;
+  padding: 15px 30px;
+  padding-right: 65px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.custom-comp .search-add-product a::before,
+.custom-comp .search-add-product > button::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\2b";
+  font-weight: 400;
+  position: absolute;
+  font-size: 47px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+}
+
+@media (max-width: 767px) {
+  .custom-comp .search-add-product {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .custom-comp .search-add-product .search {
+    width: 100%;
+  }
+
+  .custom-comp .search input {
+    width: 100%;
+  }
+
+  .custom-comp .search-add-product a,
+  .custom-comp .search-add-product > button {
+    font-size: 16px;
+    padding: 13px;
+    padding-right: 45px;
+  }
+
+  .custom-comp .search-add-product a::before,
+  .custom-comp .search-add-product > button::before {
+    font-size: 40px;
+    right: 15px;
+  }
+}
+
+.custom-comp .display-table {
+  margin: 20px 0;
+}
+
+.custom-comp .display-table span {
+  color: #888;
+  font-size: 17px;
+}
+
+.custom-comp .display-table a.active i {
+  color: var(--base-color);
+}
+
+.custom-comp .display-table i {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+.custom-comp .display-table i.bar {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.custom-comp .display-table i.specifie {
+  color: var(--base-color);
+}
+
+
+/*** Products Box ***/
+.custom-comp .products-box {
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.custom-comp .products-box .photo {
+  position: relative;
+}
+
+.custom-comp .products-box .photo img {
+  max-width: 100%;
+}
+
+.custom-comp .products-box .photo > div {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: calc(100% - 40px);
+}
+
+.custom-comp .products-box .photo > div span {
+  padding: 2px 14px 4px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.custom-comp .products-box .photo > div span.published {
+  color: var(--base-color);
+  background-color: rgb(214 246 254 / 90%);
+}
+
+.custom-comp .products-box .photo > div span.closed {
+  color: #7a0000f2;
+  background-color: rgb(255 0 0 / 40%);
+}
+
+.custom-comp .products-box .photo .procedure {
+  position: relative;
+}
+
+.custom-comp .products-box .photo .procedure i {
+  font-size: 17px;
+  background-color: rgb(0 0 0 / 45%);
+  padding: 6px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-comp .products-box .info-product {
+  margin: 15px 20px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 60px;
+}
+
+.custom-comp .products-box .info-product span {
+  font-size: 10px;
+  color: var(--base-color);
+  margin-bottom: 7px;
+}
+
+.custom-comp .products-box .info-product p {
+  color: #333;
+  font-size: 18px;
+}
+
+/**** Start Add category ****/
+.add-cat-cus {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 70%);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.add-cat-cus .show-add {
+  width: 700px;
+}
+
+@media (max-width: 767px) {
+  .add-cat-cus .show-add {
+    width: 100%;
+  }
+}
+
+.add-cat-cus .show-add .head {
+  height: 60px;
+  background-color: var(--base-color);
+  color: #fff;
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.add-cat-cus .show-add .head > div i {
+  margin-left: 10px;
+}
+
+.add-cat-cus .show-add .head > i {
+  cursor: pointer;
+}
+
+.add-category form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.add-cat-cus form input:not([type="submit"]),
+.add-cat-cus form select,
+.add-cat-cus form textarea {
+  display: block;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  resize: none;
+  background-color: #fff;
+}
+
+.add-cat-cus form input::placeholder,
+.add-cat-cus form textarea::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.add-cat-cus form input[type="submit"] {
+  background-color: var(--dashboard-color);
+  border: none;
+  color: #fff;
+  font-size: 19px;
+  padding: 13px 35px;
+  cursor: pointer;
+  font-weight: 700;
+  width: -moz-fit-content !important;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/**** End Add category  ****/
+
+
+/**** Start Add Customers ****/
+.add-client form {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.add-client form > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .add-client form > div {
+    flex-direction: column;
+  }
+}
+
+.add-client form .part-one,
+.add-client form .part-two {
+  width: 300px;
+}
+
+.add-client form select {
+  padding: 5px 13px;
+}
+
+.add-client form textarea {
+  height: 150px;
+}
+
+.add-client form input[type="submit"] {
+  display: block;
+  margin: 0 auto 0 0;
+}
+
+/**** End Add Customers ****/

@@ -1,0 +1,258 @@
+.reports .links {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.reports .links h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.reports .links div {
+  gap: 20px;
+}
+
+.reports .links a {
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  transition: var(--transition);
+}
+
+@media (max-width: 767px) {
+  .reports .links div {
+    flex-direction: column;
+  }
+
+  .reports .links a {
+    width: 100%;
+  }
+}
+
+.reports .links a.active,
+.reports .links a:hover {
+  color: var(--second-color);
+  border-color: var(--second-color);
+}
+
+.reports .content-reports {
+  margin-top: 30px;
+}
+
+/* Start Calendar */
+.reports .calendar {
+  width: 40%;
+  background: #fff;
+  text-align: center;
+  padding: 21px;
+  border-radius: 10px;
+  direction: ltr;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .reports .calendar {
+    width: 100%;
+  }
+}
+
+.reports .calendar h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.reports .calendar .weekdays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+  color: #888;
+  font-weight: 600;
+}
+
+.reports .calendar .weekdays li {
+  width: 14%;
+  font-size: 18px;
+}
+
+.reports .calendar .days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reports .calendar .days li {
+  width: 14%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: rgb(128 197 251 / 50%);
+}
+
+.reports .calendar .days li.active {
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* End Start Calendar */
+
+/* Start Sales */
+
+.sales .datesales {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .sales .datesales {
+    flex-direction: column-reverse;
+  }
+}
+
+.sales .charts {
+  width: 60%;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sales .sale {
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.sales .sale h3 {
+  padding: 10px 35px;
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.sales .sale ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sales .sale ul li:last-child {
+  margin-bottom: 35px;
+}
+
+.sales .sale > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px;
+  background-color: #eee;
+  font-size: 17px;
+}
+
+.sales .sale span {
+  margin-left: 35px;
+}
+
+/* End Sales */
+
+/* Start Products */
+.products > div {
+  align-items: flex-start;
+}
+
+.products .product {
+  margin: 0;
+  width: 70%;
+}
+
+
+@media (max-width: 767px) {
+
+  .sales .charts,
+  .products .product {
+    width: 100%;
+  }
+}
+
+/* End Products */
+
+
+/* End Clients */
+
+.clients .client {
+  width: 60%;
+}
+
+.clients .dash {
+  width: 40%;
+  background-color: #fff;
+  padding: 25px 35px 50px;
+  border-radius: 10px;
+}
+
+.clients .dash h4 {
+  margin-bottom: 40px;
+}
+
+.clients .dash > div ul {
+  width: 40%;
+}
+
+.clients .dash > div ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 13px;
+  padding-right: 18px;
+}
+
+.clients .dash ul li::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clients .dash ul .black::before {
+  background-color: black;
+}
+
+.clients .dash ul .purpul::before {
+  background-color: purple;
+}
+
+.clients .dash ul .green::before {
+  background-color: #00a4a5;
+}
+
+.clients .dash ul .blue::before {
+  background-color: #768afd;
+}
+
+.clients .dash .round {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 15px solid cadetblue;
+  margin-left: 20px;
+}
+
+.clients .dash .round span {}
+
+@media (max-width: 767px) {
+
+  .clients .dash,
+  .clients .client {
+    width: 100%;
+  }
+}
+
+/* Start Clients */

@@ -1,0 +1,52 @@
+.pages .add-page {
+  justify-content: flex-end;
+  margin: 35px 0;
+}
+
+.pages .conditions {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+
+.pages .conditions h2 {
+  font-size: 20px;
+  font-size: 20px;
+  background-color: #e8e8e8;
+  padding: 17px;
+}
+
+.pages .conditions > div {
+  margin: 25px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+}
+
+.pages .conditions p {
+  font-size: 17px;
+  color: #333;
+  font-weight: 500;
+}
+
+.pages .conditions input {
+  margin: 0 !important
+}
+
+.pages .conditions input::before {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+}
+
+.pages .conditions input::after {
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pages .conditions input:checked::after {
+  right: -52px;
+}
+
+.add-page textarea {
+  height: 200px;
+}

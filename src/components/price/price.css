@@ -1,0 +1,126 @@
+.price {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.price .title h1 {
+  margin-bottom: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1000px;
+  font-size: 17px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.price .responsive-table {
+  overflow-x: auto;
+}
+
+table tr th,
+table tr td {
+  padding: 25px 10px;
+}
+
+table tr th:not(:last-child),
+table tr td:not(:last-child) {
+  border-left: 1px solid #ddd;
+}
+
+table tr td:not(:first-child) {
+  text-align: center;
+}
+
+table tr td.text {
+  color: var(--base-color);
+  font-weight: 500;
+}
+
+table tr td i {
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+table tr td i.xmark {
+  color: #db2202;
+}
+
+table tr td i.check {
+  color: #00caa9;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+table tr th span:first-child {
+  color: var(--base-color);
+  font-size: 15px;
+}
+
+table tr th span:last-child {
+  color: #888;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+table .shopping {
+  color: var(--base-color);
+  font-size: 19px;
+}
+
+.footer-price {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 100px auto 0;
+}
+
+.footer-price h2 {
+  color: var(--base-color);
+  margin-bottom: 22px;
+  font-size: 30px;
+}
+
+.footer-price p {
+  font-size: 16px;
+}
+
+.footer-price button {
+  margin-top: 20px;
+  width: 200px;
+  box-shadow: 0 0px 20px rgb(245 112 112 / 70%);
+}
+
+.footer-price img {
+  position: absolute;
+  width: 100px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.footer-price .img1 {
+  right: -130px;
+}
+
+.footer-price .img2 {
+  left: -130px;
+}
+
+@media (max-width: 767px) {
+  .footer-price {
+    width: 100%;
+  }
+
+  .footer-price .img2 {
+    display: none;
+  }
+}

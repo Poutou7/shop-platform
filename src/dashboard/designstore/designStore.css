@@ -1,0 +1,120 @@
+.design-store .template {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+}
+
+.design-store .template .swiper-container {
+  margin: 0 25px;
+}
+
+.design-store .template .swiper-wrapper .swiper-slide {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.design-store .template .swiper-wrapper img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .design-store .template .swiper-wrapper .swiper-slide {
+    width: 200px !important;
+  }
+}
+
+.design-store .template1 .swiper-wrapper a {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 45px;
+  font-size: 17px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: rgb(255 255 255 / 40%);
+  transition-duration: 0.4s;
+}
+
+.design-store .template1 .swiper-wrapper .swiper-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 60%);
+  border-radius: 15px;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.design-store .template1 .swiper-wrapper .swiper-slide:hover::before,
+.design-store .template1 .swiper-wrapper .swiper-slide:hover a {
+  opacity: 1;
+}
+
+.design-store .template2 {
+  margin-top: 70px;
+}
+
+.design-store .template2 .info-store {
+  padding: 20px;
+  text-align: center;
+}
+
+.design-store .template2 .info-store .name {
+  font-size: 19px;
+}
+
+.design-store .template2 .info-store .stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 17px 0;
+}
+
+.design-store .template2 .info-store .stars i {
+  color: var(--second-alt-color);
+}
+
+.design-store .template2 .info-store .price {
+  font-size: 19px;
+}
+
+.design-store .template2 .info-store .price span {
+  display: inline-block;
+  font-size: 13px;
+  color: #888;
+}
+
+.design-store .template2 .info-store .links {
+  margin-top: 17px;
+}
+
+.design-store .template2 .links button,
+.design-store .template2 .links a {
+  border-radius: 7px;
+  flex-basis: 49%;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.design-store .template2 .links button {
+  background-color: var(--base-color);
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.design-store .template2 .links a {
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
+}

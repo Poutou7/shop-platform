@@ -1,0 +1,128 @@
+.previews .swiper-wrapper {
+  padding-bottom: 80px;
+}
+
+.previews .swiper-button-prev,
+.previews .swiper-button-next {
+  top: 490px !important;
+  background: var(--base-color);
+  color: #fff;
+  padding: 22px;
+  border-radius: 5px;
+}
+
+.previews .swiper-button-prev::after,
+.previews .swiper-button-next::after {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.previews .swiper-button-prev {
+  right: 46% !important;
+}
+
+.previews .swiper-button-next {
+  right: 50% !important;
+}
+
+.previews .swiper-container .swiper-slide {
+  width: 310px !important;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 17px #333 inset;
+}
+
+.previews .swiper-container .swiper-slide::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 31%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0px 31px 10px rgb(0 0 0 / 28%);
+  background-image: linear-gradient(to top, black, rgb(0 0 0 / 70%), rgb(0 0 0 / 40%), rgb(0 0 0 / 20%));
+  transition: 0.3s;
+}
+
+.previews .swiper-container .swiper-slide:hover::before {
+  height: 100%;
+  background-color: rgb(0 0 0 / 5%);
+}
+
+.previews .swiper-container .swiper-slide img {
+  max-width: 100%;
+}
+
+.previews .swiper-container .swiper-slide a {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 19px;
+  font-size: 19px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.previews .swiper-container .swiper-slide a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.previews .swiper-container .swiper-slide:hover a {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.previews .swiper-container .swiper-slide p {
+  position: absolute;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  right: 25px;
+  bottom: 16px;
+}
+
+@media (max-width: 1199px) {
+  .previews .swiper-button-prev {
+    right: 44% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .previews .swiper-container .swiper-slide {
+    width: 200px !important;
+  }
+
+  .previews .swiper-container .swiper-slide p {
+    font-size: 15px;
+  }
+
+  .previews .swiper-container .swiper-slide a {
+    padding: 7px;
+    font-size: 16px;
+    width: 113px;
+    line-height: 25px;
+  }
+
+  .previews .swiper-button-prev::after,
+  .previews .swiper-button-next::after {
+    font-size: 19px;
+  }
+
+  .previews .swiper-button-prev,
+  .previews .swiper-button-next {
+    top: 325px !important;
+    padding: 18px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .previews .swiper-button-prev {
+    right: 38% !important;
+  }
+}

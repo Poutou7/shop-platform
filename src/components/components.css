@@ -1,0 +1,81 @@
+/*** Start Button ***/
+.btn-shape {
+  position: relative;
+  margin: 30px auto;
+  width: 140px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--second-color);
+  color: #fff;
+  padding: 13px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn-shape::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: var(--second-alt-color);
+  border-radius: 30px;
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.btn-shape:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-alt-shape {
+  display: block;
+  margin: 0;
+  background-color: var(--dashboard-color);
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  transition: var(--transition);
+}
+
+/*** End Button ***/
+
+
+/*** Start BarMain ***/
+
+.bar-main ul li:not(:last-child) {
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: 2px solid #888;
+  line-height: 17px;
+}
+
+.bar-main ul a {
+  font-weight: 600;
+}
+
+.bar-main ul li:not(:first-child) a {
+  color: var(--base-color)
+}
+
+.bar-main ul li:first-child a {
+  color: #888;
+}
+
+@media (max-width: 767px) {
+  .bar-main ul a {
+    font-size: 14px;
+  }
+}
+
+/*** End BarMain ***/

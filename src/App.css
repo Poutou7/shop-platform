@@ -1,0 +1,149 @@
+/*** Variables ***/
+:root {
+  --base-color: #00a1c6;
+  --base-alt-color: rgb(0 161 198 / 10%);
+  --dashboard-color: #00586c;
+  --second-color: #f57172;
+  --second-alt-color: #f44336;
+  --transition: 0.4s
+}
+
+/*** Global Rules ***/
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::placeholder {
+  color: #aaa;
+  font-weight: 600;
+}
+
+input {
+  color: #333;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 150px;
+}
+
+.begin {
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*** Scrollbar ***/
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--base-alt-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--second-color);
+  background-color: var(--second-color);
+  border-radius: 15px;
+}
+
+
+/*** Start Error Page ***/
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--base-alt-color);
+}
+
+#error-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  padding: 138px;
+  text-align: center;
+  width: 600px;
+}
+
+#error-page h1 {
+  font-size: 35px;
+}
+#error-page span {
+  margin: 25px 0 32px;
+  font-size: 30px;
+  color: #888;
+}
+#error-page p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/*** End Error Page ***/

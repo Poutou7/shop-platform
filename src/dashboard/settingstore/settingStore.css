@@ -1,0 +1,131 @@
+.setting-store > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.setting-store .logo {
+  position: relative;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid black;
+}
+
+@media (max-width: 767px) {
+  .setting-store .logo {
+    width: 150px;
+  }
+}
+
+.setting-store .logo div {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-color: var(--base-color);
+  bottom: -60px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+@media (max-width: 767px) {
+  .setting-store .logo div {
+    bottom: 0;
+  }
+}
+
+.setting-store .logo:hover div {
+  bottom: 0;
+}
+
+.setting-store .logo i {
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+  left: 51%;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.setting-store img {
+  border-radius: 50%;
+  width: 100%;
+  border: 3px solid #dab800;
+}
+
+.setting-store form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 45%;
+}
+
+@media (max-width: 767px) {
+  .setting-store form {
+    width: 100%;
+  }
+}
+
+.setting-store form label {
+  font-size: 18px;
+}
+
+.setting-store form label input,
+.setting-store form textarea {
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: var(--base-color);
+  font-weight: 700;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.setting-store form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.setting-store form input[type="submit"] {
+  background-color: var(--dashboard-color);
+  color: #fff;
+  font-size: 19px;
+  padding: 13px 35px;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.setting-store form label .location {
+  position: relative;
+}
+
+.setting-store form button {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  border: none;
+  background-color: var(--base-color);
+  padding: 15px 20px;
+  padding-right: 45px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.setting-store form button::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\e51f";
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  right: 20px;
+}

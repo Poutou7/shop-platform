@@ -1,0 +1,191 @@
+.add-update-product {
+  position: relative;
+}
+
+.add-update-product h1 {
+  margin-bottom: 80px;
+}
+
+.add-update-product form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-update-product form select {
+  background-color: #fff;
+  padding: 5px 13px !important;
+}
+
+.add-update-product form label {
+  font-size: 17px;
+}
+
+.add-update-product form label.requires-charging {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.add-update-product form label.requires-charging input {
+  position: relative;
+  appearance: none;
+  margin-left: 27px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-update-product form label.requires-charging input::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 1px;
+  right: 0;
+  border: 1px solid #555;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.add-update-product form label.requires-charging input::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  color: #fff;
+  background: var(--base-color);
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 13px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.add-update-product form label.requires-charging input:checked:before {
+  border-color: var(--base-color);
+}
+
+.add-update-product form label.requires-charging input:checked:after {
+  opacity: 1;
+}
+
+.add-update-product form input[type="checkbox"] {
+  width: fit-content;
+  margin: 0;
+}
+
+.add-update-product form input:not([type="checkbox"]),
+.add-update-product form textarea,
+.add-update-product form select {
+  display: block;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.add-update-product form input::placeholder {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.add-update-product form > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .add-update-product form > div:first-of-type {
+    flex-direction: column;
+  }
+}
+
+.add-update-product .part-one {
+  flex-basis: 60%;
+}
+
+.add-update-product .part-one .client-product {
+  display: flex;
+  gap: 20px;
+}
+
+.add-update-product .part-one .client-product label {
+  width: 100%;
+}
+
+.add-update-product .part-one .code-product {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-update-product .part-two {
+  flex-basis: 20%;
+  margin-left: 60px;
+}
+
+@media (max-width: 767px) {
+  .add-update-product .part-two {
+    margin-left: 0;
+  }
+}
+
+.add-update-product textarea {
+  height: 250px;
+}
+
+.add-update-product label.photo {
+  cursor: pointer;
+  border: 2px dashed #ccc;
+  padding: 45px 25px 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.add-update-product label.photo i {
+  font-size: 40px;
+  color: #aaa
+}
+
+.add-update-product label.photo p {
+  margin: 0;
+  color: #777;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.add-update-product label.photo input {
+  display: none;
+}
+
+.add-update-product input[type="submit"] {
+  position: relative;
+  background-color: var(--dashboard-color);
+  border: none !important;
+  color: #fff;
+  font-size: 19px;
+  padding: 15px 30px !important;
+  cursor: pointer;
+  font-weight: 700;
+  width: fit-content !important;
+}
+
+.add-update-product input[type="submit"]:first-of-type {
+  margin: 35px auto 0px 1px;
+}
+
+.add-update-product input[type="submit"]:last-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

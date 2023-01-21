@@ -1,0 +1,80 @@
+.boxes .box {
+  position: relative;
+  padding: 65px 20px 25px;
+  cursor: pointer;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.boxes .box h1 {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+  font-size: 200px;
+  color: #f5f5f5;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.boxes .box i {
+  font-size: 30px;
+  background-color: var(--base-alt-color);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  list-style: 50px;
+  border-radius: 20px;
+  line-height: 70px;
+  color: #333;
+  transition: var(--transition);
+}
+
+.boxes .box h4 {
+  margin: 32px 0 25px;
+  font-size: 19px;
+  position: relative;
+}
+
+.boxes .box p {
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+.boxes .box:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: var(--base-color);
+  transition: 0.5s;
+  z-index: -4;
+}
+
+.boxes .box:hover:before {
+  width: 200%;
+  height: 200%;
+}
+
+.boxes .box:hover {
+  color: #fff;
+}
+
+.boxes .box:hover p {
+  color: #fff;
+}
+
+.boxes .box:hover i {
+  background-color: #fff;
+  color: var(--second-color);
+}
+
+.boxes .box:hover h1 {
+  color: rgb(0 122 150 / 50%);
+  z-index: 0;
+}
