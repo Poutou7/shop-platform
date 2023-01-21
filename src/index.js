@@ -44,7 +44,7 @@ import More from './dashboard/reports/More';
 
 const router = createBrowserRouter([
   {
-    path: "/shopplatform",
+    path: "/",
     element: <Root />,
     errorElement: <Error />,
     children: [
