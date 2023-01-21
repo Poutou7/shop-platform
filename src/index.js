@@ -6,7 +6,7 @@ import Error from './Error';
 import Root from './components/root/Root';
 import Blog from './components/blog/Blog';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import store from './store/store';
 import Price from './components/price/Price';
 import About from './components/about/About';
@@ -42,7 +42,7 @@ import Client from './dashboard/reports/Client';
 import More from './dashboard/reports/More';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
