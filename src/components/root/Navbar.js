@@ -35,13 +35,13 @@ const Navbar = () => {
         </div>
         <ul>
           <li><NavLink to="/" > الرئيـسيـة</NavLink></li>
-          <li><NavLink to="price" > الأسعــار</NavLink></li>
-          <li><NavLink to="blog" > المـدونـة</NavLink></li>
-          <li><NavLink to="about" >حـول المنـصـة</NavLink></li>
-          <li><NavLink to="contact" >تـواصل مـعـــنا</NavLink></li>
+          <li><NavLink to="/price" > الأسعــار</NavLink></li>
+          <li><NavLink to="/blog" > المـدونـة</NavLink></li>
+          <li><NavLink to="/about" >حـول المنـصـة</NavLink></li>
+          <li><NavLink to="/contact" >تـواصل مـعـــنا</NavLink></li>
         </ul>
         <div className='login'>
-          <NavLink to="shop/login" style={{ textAlign: "center" }}>تسجيل الدخول</NavLink>
+          <NavLink to="/shop/login" style={{ textAlign: "center" }}>تسجيل الدخول</NavLink>
           <Button value='الاشتراك' onClick={createShop} />
         </div>
       </div>
