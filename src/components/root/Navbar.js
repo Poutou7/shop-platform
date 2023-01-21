@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   const createShop = () => {
-    navigate("shop/create-store");
+    navigate("/shop/create-store");
   }
 
   return (
